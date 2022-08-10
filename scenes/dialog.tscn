@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/images/dialog-bg.png" type="Texture" id=1]
+[ext_resource path="res://assets/images/hadou.png" type="Texture" id=2]
+[ext_resource path="res://resources/fontTitle01.tres" type="DynamicFont" id=3]
+[ext_resource path="res://resources/fontText01.tres" type="DynamicFont" id=4]
+[ext_resource path="res://scripts/dialog.gd" type="Script" id=5]
+
+[node name="dialog" type="Node2D" groups=["dialog"]]
+script = ExtResource( 5 )
+
+[node name="Control" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="DialogBG" type="NinePatchRect" parent="Control"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -362.0
+margin_top = -155.0
+margin_right = 362.0
+margin_bottom = -20.0
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 16, 16 )
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="charName" type="Label" parent="Control"]
+margin_left = 283.0
+margin_top = 463.0
+margin_right = 426.0
+margin_bottom = 477.0
+custom_fonts/font = ExtResource( 3 )
+text = "Hadou Gamer"
+
+[node name="charMessage" type="Label" parent="Control"]
+margin_left = 286.0
+margin_top = 495.0
+margin_right = 852.0
+margin_bottom = 561.0
+custom_fonts/font = ExtResource( 4 )
+text = "Hi, my name is Hadou. I am just a wannabe game developer, but I have large experience on developing websites, apps and things like that."
+align = 3
+autowrap = true
+
+[node name="picture" type="Sprite" parent="Control"]
+position = Vector2( 219, 512 )
+scale = Vector2( 0.6, 0.6 )
+texture = ExtResource( 2 )

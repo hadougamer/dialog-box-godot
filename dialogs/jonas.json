@@ -1,0 +1,26 @@
+{
+	"id": "jonas",
+	"name": "Jonas Abby",
+	"dialog": [
+    {
+			"id": "hadou",
+      "name": "Hadou",
+			"message": "Hi, my name is Hadou. Whats is yours?"
+		},
+		{
+			"id": "jonas",
+      "name": "Jonas Abby",
+			"message": "My name is Jonas Abby. Please to meet you!"
+		},
+		{
+			"id": "hadou",
+      "name": "Hadou",
+			"message": "The pleasuer is mine"
+		},
+		{
+			"id": "jonas",
+      "name": "Jonas",
+			"message": "See you later!"
+		}
+	]
+}

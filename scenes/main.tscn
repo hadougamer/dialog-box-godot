@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/npc01.tscn" type="PackedScene" id=3]
+
+[node name="main" type="Node2D"]
+
+[node name="ui" type="CanvasLayer" parent="."]
+
+[node name="Char" parent="." instance=ExtResource( 2 )]
+position = Vector2( 433, 286 )
+
+[node name="npc" parent="." instance=ExtResource( 3 )]
+position = Vector2( 723, 226 )
+npc_id = "jonas"
